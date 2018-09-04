@@ -104,23 +104,23 @@ describe('hotColumn', function() {
     expect(columns[2].readOnly).toBe(true);
   });
 
-  it('should create table with `format` attribute in columns', function() {
-    rootScope.formats = [void 0, '$0', '0.0USD'];
-    var scope = angular.element(compile(
-        '<hot-table>' +
-          '<hot-column format="formats[0]"></hot-column>' +
-          '<hot-column format="formats[1]"></hot-column>' +
-          '<hot-column format="formats[2]"></hot-column>' +
-        '</hot-table>'
-      )(rootScope)).isolateScope();
+  // it('should create table with `format` attribute in columns', function() {
+  //   rootScope.formats = [void 0, '$0', '0.0USD'];
+  //   var scope = angular.element(compile(
+  //       '<hot-table>' +
+  //         '<hot-column format="formats[0]"></hot-column>' +
+  //         '<hot-column format="formats[1]"></hot-column>' +
+  //         '<hot-column format="formats[2]"></hot-column>' +
+  //       '</hot-table>'
+  //     )(rootScope)).isolateScope();
 
-    scope.$digest();
-    var columns = scope.hotInstance.getSettings().columns;
+  //   scope.$digest();
+  //   var columns = scope.hotInstance.getSettings().columns;
 
-    expect(columns[0].format).toBe(void 0);
-    expect(columns[1].format).toBe('$0');
-    expect(columns[2].format).toBe('0.0USD');
-  });
+  //   expect(columns[0].format).toBe(void 0);
+  //   expect(columns[1].format).toBe('$0');
+  //   expect(columns[2].format).toBe('0.0USD');
+  // });
 
   it('should create table with `checkedTemplate` attribute in columns', function() {
     rootScope.checkedTemplate = [true, 'Yes', 'Go'];
