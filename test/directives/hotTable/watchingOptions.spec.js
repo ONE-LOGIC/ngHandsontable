@@ -257,23 +257,23 @@ describe('hotTable - Watching options', function() {
     expect(scope.hotInstance.getSettings().allowRemoveColumn).toBe(rootScope.value);
   });
 
-  it('should create table with `multiSelect` attribute', function() {
-    rootScope.value = false;
-    var scope = angular.element(compile('<hot-table multi-select="value"></hot-table>')(rootScope)).isolateScope();
+  // it('should create table with `multiSelect` attribute', function() {
+  //   rootScope.value = false;
+  //   var scope = angular.element(compile('<hot-table multi-select="value"></hot-table>')(rootScope)).isolateScope();
 
-    scope.$digest();
+  //   scope.$digest();
 
-    expect(scope.hotInstance.getSettings().multiSelect).toBe(rootScope.value);
-  });
+  //   expect(scope.hotInstance.getSettings().multiSelect).toBe(rootScope.value);
+  // });
 
-  it('should create table with `multiSelect` attribute', function() {
-    rootScope.value = false;
-    var scope = angular.element(compile('<hot-table multi-select="value"></hot-table>')(rootScope)).isolateScope();
+  // it('should create table with `multiSelect` attribute', function() {
+  //   rootScope.value = false;
+  //   var scope = angular.element(compile('<hot-table multi-select="value"></hot-table>')(rootScope)).isolateScope();
 
-    scope.$digest();
+  //   scope.$digest();
 
-    expect(scope.hotInstance.getSettings().multiSelect).toBe(rootScope.value);
-  });
+  //   expect(scope.hotInstance.getSettings().multiSelect).toBe(rootScope.value);
+  // });
 
   it('should create table with `fillHandle` attribute', function() {
     rootScope.value = false;
@@ -356,32 +356,32 @@ describe('hotTable - Watching options', function() {
     expect(scope.hotInstance.getSettings().autoWrapCol).toBe(rootScope.value);
   });
 
-  it('should create table with `copyRowsLimit` attribute', function() {
-    rootScope.value = 563;
-    var scope = angular.element(compile('<hot-table copy-rows-limit="value"></hot-table>')(rootScope)).isolateScope();
+  // it('should create table with `copyRowsLimit` attribute', function() {
+  //   rootScope.value = 563;
+  //   var scope = angular.element(compile('<hot-table copy-rows-limit="value"></hot-table>')(rootScope)).isolateScope();
 
-    scope.$digest();
+  //   scope.$digest();
 
-    expect(scope.hotInstance.getSettings().copyRowsLimit).toBe(rootScope.value);
-  });
+  //   expect(scope.hotInstance.getSettings().copyRowsLimit).toBe(rootScope.value);
+  // });
 
-  it('should create table with `copyColsLimit` attribute', function() {
-    rootScope.value = 563;
-    var scope = angular.element(compile('<hot-table copy-cols-limit="value"></hot-table>')(rootScope)).isolateScope();
+  // it('should create table with `copyColsLimit` attribute', function() {
+  //   rootScope.value = 563;
+  //   var scope = angular.element(compile('<hot-table copy-cols-limit="value"></hot-table>')(rootScope)).isolateScope();
 
-    scope.$digest();
+  //   scope.$digest();
 
-    expect(scope.hotInstance.getSettings().copyColsLimit).toBe(rootScope.value);
-  });
+  //   expect(scope.hotInstance.getSettings().copyColsLimit).toBe(rootScope.value);
+  // });
 
-  it('should create table with `pasteMode` attribute', function() {
-    rootScope.value = 'test';
-    var scope = angular.element(compile('<hot-table paste-mode="value"></hot-table>')(rootScope)).isolateScope();
+  // it('should create table with `pasteMode` attribute', function() {
+  //   rootScope.value = 'test';
+  //   var scope = angular.element(compile('<hot-table paste-mode="value"></hot-table>')(rootScope)).isolateScope();
 
-    scope.$digest();
+  //   scope.$digest();
 
-    expect(scope.hotInstance.getSettings().pasteMode).toBe(rootScope.value);
-  });
+  //   expect(scope.hotInstance.getSettings().pasteMode).toBe(rootScope.value);
+  // });
 
   it('should create table with `persistentState` attribute', function() {
     rootScope.value = true;
@@ -563,14 +563,14 @@ describe('hotTable - Watching options', function() {
     expect(scope.hotInstance.getSettings().editor).toBe(rootScope.value);
   });
 
-  it('should create table with `autoComplete` attribute', function() {
-    rootScope.value = true;
-    var scope = angular.element(compile('<hot-table auto-complete="value"></hot-table>')(rootScope)).isolateScope();
+  // it('should create table with `autoComplete` attribute', function() {
+  //   rootScope.value = true;
+  //   var scope = angular.element(compile('<hot-table auto-complete="value"></hot-table>')(rootScope)).isolateScope();
 
-    scope.$digest();
+  //   scope.$digest();
 
-    expect(scope.hotInstance.getSettings().autoComplete).toBe(rootScope.value);
-  });
+  //   expect(scope.hotInstance.getSettings().autoComplete).toBe(rootScope.value);
+  // });
 
   it('should create table with `debug` attribute', function() {
     rootScope.value = true;
@@ -792,14 +792,14 @@ describe('hotTable - Watching options', function() {
     expect(scope.hotInstance.getSettings().uncheckedTemplate).toBe(rootScope.value);
   });
 
-  it('should create table with `format` attribute', function() {
-    rootScope.value = '$0,0.0';
-    var scope = angular.element(compile('<hot-table format="value"></hot-table>')(rootScope)).isolateScope();
+  // it('should create table with `format` attribute', function() {
+  //   rootScope.value = '$0,0.0';
+  //   var scope = angular.element(compile('<hot-table format="value"></hot-table>')(rootScope)).isolateScope();
 
-    scope.$digest();
+  //   scope.$digest();
 
-    expect(scope.hotInstance.getSettings().format).toBe(rootScope.value);
-  });
+  //   expect(scope.hotInstance.getSettings().format).toBe(rootScope.value);
+  // });
 
   it('should create table with `className` attribute', function() {
     rootScope.value = 'class-name';
